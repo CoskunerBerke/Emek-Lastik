@@ -12,7 +12,7 @@ const ReviewCard: React.FC<{ review: ReviewItem }> = ({ review }) => (
           ))}
         </div>
         <span className="text-[11px] font-bold text-sky-300 bg-sky-950/70 border border-sky-800/60 px-2.5 py-0.5 rounded-md">
-          {review.carModel}
+          {review.productGroup}
         </span>
       </div>
 
@@ -31,7 +31,7 @@ const ReviewCard: React.FC<{ review: ReviewItem }> = ({ review }) => (
             {review.author}
             <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
           </div>
-          <div className="text-[11px] text-slate-400">{review.timeAgo} • Google Yorumu</div>
+          <div className="text-[11px] text-slate-400">{review.role} • {review.timeAgo}</div>
         </div>
       </div>
       {review.highlight && (
@@ -57,20 +57,20 @@ export const ReviewRiver: React.FC = () => {
                   <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
                 ))}
               </div>
-              <span className="text-white font-bold text-sm">4.8 / 5 Google İşletme Puanı</span>
+              <span className="text-white font-bold text-sm">4.7 / 5 Kurumsal &amp; Google Değerlendirmesi</span>
             </div>
             <h2 className="font-display text-2xl sm:text-4xl font-bold text-white tracking-tight">
-              Mercedes Sahiplerinin ve Filoların Yorumları
+              Bayilerimizin, Fabrika ve Kurumların Yorumları
             </h2>
           </div>
 
           <a
-            href="https://maps.app.goo.gl/L96AQBgHhupn1F45A"
+            href="https://www.google.com/maps/search/?api=1&query=Emek+Lastik+Organize+Sanayi+B%C3%B6lgesi+Tekkek%C3%B6y+Samsun"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-bold text-white bg-slate-900 hover:bg-slate-800 px-4 py-2.5 rounded-lg border border-slate-700 transition-colors self-start md:self-auto"
           >
-            <span>Google Haritalar&apos;da Tüm Yorumları Gör</span>
+            <span>Google Haritalar&apos;da Fabrika Konumu &amp; Yorumlar</span>
             <ExternalLink className="w-4 h-4 text-sky-400" />
           </a>
         </div>
