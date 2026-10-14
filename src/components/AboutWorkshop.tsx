@@ -45,7 +45,7 @@ export const AboutWorkshop: React.FC = () => {
   ];
 
   return (
-    <section id="markalar" className="py-16 bg-white border-b border-slate-200">
+    <section id="kurumsal" className="py-16 bg-white border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         {/* Part 1: Official 14 Brands Strip */}
         <div className="mb-14">
